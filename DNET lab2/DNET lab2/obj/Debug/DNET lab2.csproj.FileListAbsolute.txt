@@ -1,0 +1,6 @@
+C:\GitHub\mark1\DNET lab2\DNET lab2\bin\Debug\DNET lab2.exe.config
+C:\GitHub\mark1\DNET lab2\DNET lab2\obj\Debug\DNET lab2.csprojResolveAssemblyReference.cache
+C:\GitHub\mark1\DNET lab2\DNET lab2\bin\Debug\DNET lab2.exe
+C:\GitHub\mark1\DNET lab2\DNET lab2\bin\Debug\DNET lab2.pdb
+C:\GitHub\mark1\DNET lab2\DNET lab2\obj\Debug\DNET lab2.exe
+C:\GitHub\mark1\DNET lab2\DNET lab2\obj\Debug\DNET lab2.pdb
