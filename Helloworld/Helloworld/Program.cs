@@ -10,7 +10,7 @@ namespace Helloworld
             Console.ForegroundColor = ConsoleColor.Black;
             int testInt = 10;
             Console.WriteLine("Hello world! ");
-            Console.WriteLine(testInt);
+            Console.WriteLine("Current Date and Time: {0}", DateTime.Now.ToString());
         }
     }
 }

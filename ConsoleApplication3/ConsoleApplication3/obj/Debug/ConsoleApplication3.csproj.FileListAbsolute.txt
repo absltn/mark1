@@ -1,0 +1,6 @@
+C:\GitHub\mark1\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\GitHub\mark1\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\GitHub\mark1\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\GitHub\mark1\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\GitHub\mark1\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\GitHub\mark1\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
