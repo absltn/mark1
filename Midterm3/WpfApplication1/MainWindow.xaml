@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WpfApplication1.MainWindow"
+        Title="Gas in a click" Height="350" Width="525" SizeToContent="Height">
+    <Grid Margin="0,5,0,0">
+        <StackPanel>
+            <Image Source="C:\GitHub\mark1\Midterm3\Logo.png" Stretch="None" Margin="0,0,350,0"/>
+            <TextBlock><Run Text="Select gas:"/></TextBlock>
+
+            <ComboBox Text="Gas selection list" Margin="0,0,300,0">
+                <ComboBoxItem Content="Test 1" Tag="1"/>
+                <ComboBoxItem Content="Test 2" Tag="2"/>
+                <ComboBoxItem Content="Test 3" Tag="3"/>
+            </ComboBox>
+            <TextBlock Text="Select purity:" Margin="0,10,300,0"/>
+            <ComboBox Text="Purity selection list" Margin="0,0,300,0">
+                <ComboBoxItem Content="Test 1" Tag="1"/>
+                <ComboBoxItem Content="Test 2" Tag="2"/>
+                <ComboBoxItem Content="Test 3" Tag="3"/>
+            </ComboBox>
+            <TextBlock Text="Select cylinder type:" Margin="0,10,300,0"/>
+
+            <ComboBox Text="Purity selection list" Margin="0,0,300,0">
+                <ComboBoxItem Content="B10" Tag="1"/>
+                <ComboBoxItem Content="B50" Tag="2"/>
+            </ComboBox>
+            <Button Content="Calculate"  Margin="157,40,300,0" Height="25"/>
+        </StackPanel>
+    </Grid>
+</Window>
