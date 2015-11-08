@@ -29,25 +29,30 @@ namespace myProject
         }
         public void sell (string customerName, string gasName, int qty)
         {
-            if (customers.Exists(x => x.name == customerName)&&(gases.Exists(x => x.name == gasName)))
+            if (customers.Exists(x => x.Name == customerName)&&(gases.Exists(x => x.Name == gasName)))
             {
-            int index = gases.FindIndex(x => x.name == gasName);
-            if (gases[index].quantity >= qty)
+            int index = gases.FindIndex(x => x.Name == gasName);
+            if (gases[index].Quantity >= qty)
+                gases[index].Quantity -= qty;
             }
             
         }
     }
 
     public class Customer
-    { public string name {get;set;}
-    private List<Gastype> gastype;
+    {
+        private string name;
+        public string Name { get { return name; } set { name = value; } }
+    //private List<Gastype> gastype;
     }
 
 
     public class Gastype
     {
-        public int quantity { get; private set { if (value < 0) throw new InvalidDataException(); else quantity = value; } }   //устанавливаем доступное баллонов
-        public string name { get; private set; }
+        private int quantity;
+        private string name;
+        public int Quantity { get {return quantity;} set { if (value < 0) throw new InvalidDataException(); else quantity = value; } }   //устанавливаем доступное баллонов
+        public string Name { get {return name;} set;}
 
     }
 

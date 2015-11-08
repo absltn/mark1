@@ -7,8 +7,8 @@
     <ProjectGuid>{E521A1ED-0647-43DF-AB9C-764075415E20}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Manufacturer</RootNamespace>
-    <AssemblyName>Manufacturer</AssemblyName>
+    <RootNamespace>ManufCustomer</RootNamespace>
+    <AssemblyName>ManufCustomer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
