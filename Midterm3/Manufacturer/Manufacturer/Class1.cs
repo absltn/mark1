@@ -7,6 +7,7 @@ using System.IO;
 using System.Runtime;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
+using System.Runtime.Serialization.Formatters.Soap;
 using System.Net;
 using System.Threading;
 using Exception;
@@ -16,17 +17,15 @@ namespace myProject
 {
     delegate void SellingNotification (string customer, string gas, int qty);   //уведомление покупателя о доставке n баллонов
 
-    [Serializable]
-    public class Manufacturer: ISerializable
+    [Serializable]                               //объекты классов будем сериализировать для сохранения информации при перезапуске приложения
+    public class Manufacturer
     {
+        const string FileName = @"..\..\SavedManufacturer.xml";
         private string name {get; set;}
         public List<Gastype> gases;
         public List<Customer> customers;
         public event SellingNotification notify;
-        void ISerializable.GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            throw new NotImplementedException();
-        }
+        
         public void sell (string customerName, string gasName, int qty)
         {
             if (customers.Exists(x => x.Name == customerName)&&(gases.Exists(x => x.Name == gasName)))
@@ -34,11 +33,20 @@ namespace myProject
             int index = gases.FindIndex(x => x.Name == gasName);
             if (gases[index].Quantity >= qty)
                 gases[index].Quantity -= qty;
-            }
-            
+            }            
         }
-    }
+        public void save()
+        {
+            FileInfo file = Create();
+            
+            Stream stream = File.Open("data.xml", FileMode.Create);
+            SoapFormatter formatter = new SoapFormatter();
 
+        }
+
+
+    }
+    [Serializable]
     public class Customer
     {
         private string name;
@@ -46,7 +54,7 @@ namespace myProject
     //private List<Gastype> gastype;
     }
 
-
+    [Serializable]
     public class Gastype
     {
         private int quantity;
