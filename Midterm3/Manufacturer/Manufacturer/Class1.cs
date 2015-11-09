@@ -22,8 +22,8 @@ namespace myProject
     {
         const string FileName = @"..\..\SavedManufacturer.xml";
         private string name {get; set;}
-        public List<Gastype> gases;                                        // объекты Manufacturer хранят в себе списки номенклатуры газов и 
-        public List<Customer> customers;                                   // покупателей
+        public List<Gastype> gases;
+        public List<Customer> customers;
         public event SellingNotification notify;
         
         public void sell (string customerName, string gasName, int qty)
@@ -35,31 +35,11 @@ namespace myProject
                 gases[index].Quantity -= qty;
             }            
         }
-
-        public void addCustomer(Customer newCustomer)
-        {
-            if (!customers.Exists(x => x.Name == newCustomer.Name))
-                customers.append(newCustomer);
-        }
-
-        public void addGastype(Gastype newGas)
-        {
-            if (!gases.Exists(x => x.Name == newGas.Name))
-                gases.append(newGas);
-            else 
-            {
-                int index = gases.FindIndex(x => x.Name == gasName);
-                gases[index].Quantity += newGas.quantity;
-            }
-        }
-
-
-
         public void save()
         {
             FileInfo file = Create();
             
-            Stream stream = File.Open(Filename, FileMode.Create);
+            Stream stream = File.Open("data.xml", FileMode.Create);
             SoapFormatter formatter = new SoapFormatter();
 
         }
@@ -83,4 +63,8 @@ namespace myProject
         public string Name { get {return name;} set;}
 
     }
+
+
+
+
 }
