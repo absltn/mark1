@@ -1,0 +1,6 @@
+C:\GitHub\mark1\TrueManufacturer\Manufacturer\Manufacturer\obj\Debug\Manufacturer.csprojResolveAssemblyReference.cache
+C:\GitHub\mark1\TrueManufacturer\Manufacturer\Manufacturer\bin\Debug\Manufacturer.dll
+C:\GitHub\mark1\TrueManufacturer\Manufacturer\Manufacturer\bin\Debug\Manufacturer.pdb
+C:\GitHub\mark1\TrueManufacturer\Manufacturer\Manufacturer\bin\Debug\System.dll
+C:\GitHub\mark1\TrueManufacturer\Manufacturer\Manufacturer\obj\Debug\Manufacturer.dll
+C:\GitHub\mark1\TrueManufacturer\Manufacturer\Manufacturer\obj\Debug\Manufacturer.pdb

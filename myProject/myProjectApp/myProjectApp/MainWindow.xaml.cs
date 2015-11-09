@@ -23,6 +23,8 @@ namespace myProjectApp
         public MainWindow()
         {
             InitializeComponent();
+            List<int> newList;
+
         }
     }
 }
