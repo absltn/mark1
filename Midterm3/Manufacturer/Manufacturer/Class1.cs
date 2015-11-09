@@ -17,9 +17,10 @@ namespace myProject
 {
     delegate void SellingNotification(string customer, string gas, int qty);   //уведомление покупателя о доставке n баллонов
 
-    [Serializable]                               //объекты классов будем сериализировать для сохранения информации при перезапуске приложения
-    public class Manufacturer
+    [Serializable]
+    public class Manufacturer: ISerializable
     {
+<<<<<<< HEAD
         const string FileName = @"..\..\SavedManufacturer.xml";
         private string name { get; set; }
         public List<Gastype> gases;                                        // объекты Manufacturer хранят в себе списки номенклатуры газов и 
@@ -43,11 +44,23 @@ namespace myProject
         }
 
         public void addGastype(Gastype newGas)
+=======
+        private string name {get; set;}
+        public List<Gastype> gases;
+        public List<Customer> customers;
+        public event SellingNotification notify;
+        void ISerializable.GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            throw new NotImplementedException();
+        }
+        public void sell (string customerName, string gasName, int qty)
+>>>>>>> parent of 91f4f61... myProj repo3
         {
             if (!gases.Exists(x => x.Name == newGas.Name))
                 gases.append(newGas);
             else
             {
+<<<<<<< HEAD
                 int index = gases.FindIndex(x => x.Name == gasName);
                 gases[index].Quantity += newGas.quantity;
             }
@@ -62,11 +75,16 @@ namespace myProject
             Stream stream = File.Open(Filename, FileMode.Create);
             SoapFormatter formatter = new SoapFormatter();
 
+=======
+            int index = gases.FindIndex(x => x.Name == gasName);
+            if (gases[index].Quantity >= qty)
+                gases[index].Quantity -= qty;
+            }
+            
+>>>>>>> parent of 91f4f61... myProj repo3
         }
-
-
     }
-    [Serializable]
+
     public class Customer
     {
         private string name;
@@ -74,7 +92,7 @@ namespace myProject
         //private List<Gastype> gastype;
     }
 
-    [Serializable]
+
     public class Gastype
     {
         private int quantity;
