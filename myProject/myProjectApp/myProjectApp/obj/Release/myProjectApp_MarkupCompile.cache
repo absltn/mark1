@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Debug\
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\
 myProjectApp
 none
 false
-CODE_ANALYSIS;DEBUG;TRACE
+TRACE
 C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\App.xaml
 11151548125
 

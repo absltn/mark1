@@ -1,0 +1,12 @@
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\bin\Release\myProjectApp.exe.config
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\bin\Release\myProjectApp.exe
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\bin\Release\myProjectApp.pdb
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\MainWindow.baml
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\MainWindow.g.cs
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\App.g.cs
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\myProjectApp_MarkupCompile.cache
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\myProjectApp.g.resources
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\myProjectApp.Properties.Resources.resources
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\myProjectApp.csproj.GenerateResource.Cache
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\myProjectApp.exe
+C:\GitHub\mark1\myProject\myProjectApp\myProjectApp\obj\Release\myProjectApp.pdb
