@@ -1,0 +1,5 @@
+C:\GitHub\mark1\testsoap\ClassLibrary1\ClassLibrary1\obj\Release\ProjectLib.csprojResolveAssemblyReference.cache
+C:\GitHub\mark1\testsoap\ClassLibrary1\ClassLibrary1\obj\Release\ClassLibrary1.dll
+C:\GitHub\mark1\testsoap\ClassLibrary1\ClassLibrary1\obj\Release\ClassLibrary1.pdb
+C:\GitHub\mark1\testsoap\ClassLibrary1\ClassLibrary1\bin\Release\ClassLibrary1.dll
+C:\GitHub\mark1\testsoap\ClassLibrary1\ClassLibrary1\bin\Release\ClassLibrary1.pdb

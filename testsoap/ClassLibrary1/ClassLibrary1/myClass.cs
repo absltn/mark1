@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,52 +10,40 @@ using System.Xml.Serialization;
 using System.Runtime.Serialization.Formatters.Soap;
 using System.Net;
 using System.Threading;
-using Exception;
 
-<<<<<<< HEAD:TrueManufacturer/ConsoleApplication1/ConsoleApplication1/Program.cs
-namespace ConsoleApplication1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-=======
+
 
 namespace myProject
 {
-    delegate void SellingNotification (string customer, string gas, int qty);   //уведомление покупателя о доставке n баллонов
-
     [Serializable]                               //объекты классов будем сериализировать для сохранения информации при перезапуске приложения
     public class Manufacturer
     {
         const string FileName = @"..\..\SavedManufacturer.xml";
-        private string name {get; set;}
+        private string name { get; set; }
         public List<Gastype> gases;                                        // объекты Manufacturer хранят в себе списки номенклатуры газов и 
         public List<Customer> customers;                                   // покупателей
-        public event SellingNotification notify;
-        
-        public void sell (string customerName, string gasName, int qty)
+
+        public void sell(string customerName, string gasName, int qty)
         {
-            if (customers.Exists(x => x.Name == customerName)&&(gases.Exists(x => x.Name == gasName)))
+            if (customers.Exists(x => x.Name == customerName) && (gases.Exists(x => x.Name == gasName)))
             {
-            int index = gases.FindIndex(x => x.Name == gasName);
-            if (gases[index].Quantity >= qty)
-                gases[index].Quantity -= qty;
-            }            
+                int index = gases.FindIndex(x => x.Name == gasName);
+                if (gases[index].Quantity >= qty)
+                    gases[index].Quantity -= qty;
+            }
         }
 
         public void addCustomer(Customer newCustomer)
         {
             if (!customers.Exists(x => x.Name == newCustomer.Name))
-                customers.append(newCustomer);
+                customers.Add(newCustomer);
         }
 
         public void addGastype(Gastype newGas)
         {
             if (!gases.Exists(x => x.Name == newGas.Name))
-                gases.append(newGas);
-            else 
+                gases.Add(newGas);
+            else
             {
                 int index = gases.FindIndex(x => x.Name == newGas.Name);
                 gases[index].Quantity += newGas.Quantity;
@@ -66,10 +54,10 @@ namespace myProject
 
         public void save()
         {
-            FileInfo file = Create();
-            
-            Stream stream = File.Open(Filename, FileMode.Create);
+
+            Stream stream = File.Open(FileName, FileMode.Create);
             SoapFormatter formatter = new SoapFormatter();
+            formatter.Serialize(stream, this);
 
         }
 
@@ -80,7 +68,11 @@ namespace myProject
     {
         private string name;
         public string Name { get { return name; } set { name = value; } }
-    //private List<Gastype> gastype;
+
+        Customer (string s)
+        {
+            Name = s;
+        }
     }
 
     [Serializable]
@@ -88,9 +80,14 @@ namespace myProject
     {
         private int quantity;
         private string name;
-        public int Quantity { get {return quantity;} set { if (value < 0) throw new InvalidDataException(); else quantity = value; } }   //устанавливаем доступное баллонов
-        public string Name { get {return name;} set;}
+        public int Quantity { get { return quantity; } set { if (value < 0) throw new InvalidDataException(); else quantity = value; } }   //устанавливаем доступное баллонов
+        public string Name { get { return name; } set { name = value; } }
 
->>>>>>> f1b561a1737541adbefc3ef2b5a6fa949163a39d:myProject/Manufacturer/Manufacturer/Class1.cs
+        Gastype (string s , int q)
+        {
+            Quantity = q;
+            Name = s;
+        }
+
     }
 }

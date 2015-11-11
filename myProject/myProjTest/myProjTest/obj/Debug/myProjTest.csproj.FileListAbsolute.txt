@@ -1,0 +1,8 @@
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\bin\Debug\myProjTest.exe.config
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\bin\Debug\myProjTest.exe
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\bin\Debug\myProjTest.pdb
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\obj\Debug\myProjTest.csprojResolveAssemblyReference.cache
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\obj\Debug\myProjTest.exe
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\obj\Debug\myProjTest.pdb
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\bin\Debug\ClassLibrary1.dll
+C:\GitHub\mark1\myProject\myProjTest\myProjTest\bin\Debug\ClassLibrary1.pdb
